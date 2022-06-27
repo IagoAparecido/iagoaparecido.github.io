@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>LandingPage</title>
+</head>
+<body>
+  <header>
+      <nav>
+        <a class="logo" href="/">Iago</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+        <section id="home">
+            <div class="home-info">
+                <h2>Olá, Mundo!</h2>
+              <span class="home-name">Iago Ferreira Aparecido</span>
+              <span class="home-resume">
+                Estudante de Análise e Desenvolvimento de Sistemas.
+              </span>
+            </div>
+            <div class="home-img">
+                <div class="home-img"><img id="pg1" src="imgs/undraw_programming_re_kg9v.svg" alt=""></div>
+                <span class="icon" style="font-size: 38px; color: rgb(255, 255, 255);">
+                  <i class="fa-solid fa-angles-down"></i>
+                </span> 
+            </div>
+        </section>        
+
+        <section id="sobre">
+          <div class="sobre-img"><img id="img-sobre" src="imgs/20220626_184133.jpg" alt=""></div>
+            <div class="sobre-info">
+              <hr>
+              <h2>Olá, me chamo Iago</h2>
+              <span class="sobre-resume">
+                Atualmente cursando Análise e Desenvolvimento de Sistemas, 1° Semestre.<br>Em busca de cada vez mais informações e conhecimentos. <br>
+                Sempre focado e almejando grandes oportunidade.
+                <br><br>
+                Conhecimento básico em HTML <i class="fa-brands fa-html5"></i>, CSS <i class="fa-brands fa-css3-alt"></i> e atualmente estudando JavaScript <i class="fa-brands fa-js"></i>.    
+              </span>
+              <hr>
+              <br>
+              <div class="social-media">
+              <a href="https://github.com/IagoAparecido" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/iago2p/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/iago-ferreira-aparecido-738bb0232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>    
+        </section>
+  
+        <section class="conteiner">
+          <div id="projetos"><h1>Projetos</h1></div>
+            <div class="card">
+             <div class="card-image img-2"></div>
+                <h2>Teste de API</h2>
+                <br>
+                 <p>
+                  Estudo de API. <br><br>
+                  Uma simples API de consuta de CEP, ultilizando AJAX.
+                  <br><br><br>
+                 </p>
+                 <a href="./paginas/api.html">Saiba Mais</a>
+            </div>
+          <div class="card">
+              <div class="card-image img-1"></div>
+                <h2>EM BREVE </h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, ratione tempore quaerat sunt id doloribus, hic delectus eveniet illo impedit. Quibusdam sed ipsa ullam non exercitationem. At, voluptas assumenda!</p>
+                  <a href="#">Saiba Mais</a>
+          </div>
+          <div class="card">
+            <div class="card-image img-1"></div>
+              <h2>EM BREVE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, ratione tempore quaerat sunt id doloribus, hic delectus eveniet illo impedit. Quibusdam sed ipsa ullam non exercitationem. At, voluptas assumenda!</p>
+                  <a href="#">Saiba Mais</a>
+          </div>
+          <div class="card">
+            <div class="card-image img-1"></div>
+              <h2>EM BREVE</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, ratione tempore quaerat sunt id doloribus, hic delectus eveniet illo impedit. Quibusdam sed ipsa ullam non exercitationem. At, voluptas assumenda!</p>
+                  <a href="#">Saiba Mais</a>
+          </div>
+          <div class="card">
+            <div class="card-image img-1"></div>
+              <h2>EM BREVE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, ratione tempore quaerat sunt id doloribus, hic delectus eveniet illo impedit. Quibusdam sed ipsa ullam non exercitationem. At, voluptas assumenda!</p>
+                <a href="#">Saiba Mais</a>
+          </div>                             
+          </section>
+
+<div id="contato">
+          <h1>Contato</h1>
+          <form action="https://formsubmit.co/iagoferreiraaparecido9@gmail.com" method="POST" class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required/>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required/>
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" required></textarea>
+            <input type="hidden" name="_captcha" value="false"/>
+            <input type="hidden" name="_next" value="https://iagoaparecido.github.io/paginas/obrigado.html"/>
+            <button type="submit">Enviar</button>
+          </form>      
+        </div>
+  </main>    
+
+<footer>
+    <p>Posted by: Iago Ferreira Aparecido</p>
+</footer>
+
+<script src="/Js/index.js"></script>
+<script src="https://kit.fontawesome.com/41b7b81a59.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
