@@ -1,5 +1,7 @@
 # iagoaparecido.github.io
 
-Minha primeira Landing Page, criada para N3 do primeiro semestre
+Minha primeira Landing Page, criada para N3 do primeiro semestre de ADS
 
-Meu primeiro projeto em que me dediquei minimamente. 
+<div>
+    <img src="./imgs/Screenshot.png" width="600px"</img> 
+</div>
