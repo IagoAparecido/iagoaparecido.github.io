@@ -1,13 +1,13 @@
-$("#btn").on("click", function(){
+$("#btn").on("click", function () {
     var numCep = $("#cep").val();
-    var url = "https://viacep.com.br/ws/"+numCep+"/json";
+    var url = "https://viacep.com.br/ws/" + numCep + "/json";
 
     $.ajax({
         url: url,
         type: "get",
         dataType: "json",
 
-        success:function(dados){
+        success: function (dados) {
             console.log(dados);
             $("#uf").val(dados.uf);
             $("#cidade").val(dados.localidade);
@@ -15,6 +15,4 @@ $("#btn").on("click", function(){
             $("#bairro").val(dados.bairro);
         }
     })
-
-   
 })
