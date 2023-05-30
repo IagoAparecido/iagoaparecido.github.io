@@ -114,6 +114,10 @@ section#home {
   align-items: center;
 }
 
+.home-img {
+  margin-top: -50px;
+}
+
 .home-name {
   color: #0072c4;
   font-size: 30px;
@@ -125,6 +129,7 @@ section#home {
   border-radius: 100px;
   max-width: 500px;
   margin-bottom: 10px;
+  margin-top: -50px;
 }
 
 section#sobre {
@@ -245,6 +250,19 @@ section#sobre {
 #contato h1::before {
   content: "📧";
   display: block;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+  margin-top: -350px;
+  text-align: center;
 }
 
 .form {
