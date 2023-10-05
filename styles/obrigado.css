@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  color: #1f2937;
+}
+
+.text {
+  font-size: 1.5rem;
+  margin-top: -20px;
+  color: #1f2937;
+}
+
+.img {
+  width: 500px;
+  margin-top: 20px;
+}

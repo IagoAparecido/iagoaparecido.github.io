@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  font-family: "Roboto", sans-serif;
 }
 body::-webkit-scrollbar {
   width: 6px;
@@ -40,10 +41,6 @@ a {
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
-}
-
-a:hover {
-  opacity: 0.7;
 }
 
 p {
@@ -67,6 +64,7 @@ nav {
   height: 8vh;
   box-shadow: 0 1px 0 #3b3b44;
   padding: 15px;
+  z-index: 1;
 }
 
 .nav-list {
@@ -101,7 +99,7 @@ section#home {
   justify-content: space-around;
   padding: 5px 20px;
   max-width: 100%;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
@@ -114,67 +112,57 @@ section#home {
   align-items: center;
 }
 
-.home-img {
-  margin-top: -50px;
-}
-
 .home-name {
-  color: #0072c4;
+  color: #7064fc;
   font-size: 30px;
 }
 #img-sobre {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  border-radius: 100px;
+  border-radius: 5px;
   max-width: 500px;
-  margin-bottom: 10px;
-  margin-top: -50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 section#sobre {
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 25px;
-  color: black;
+  color: #1f2937;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 100px 20px;
   width: 100%;
-  flex-wrap: wrap;
-  background-color: lightgray;
+  background-color: #fff;
+  gap: 20px;
 }
 
 .social-media {
-  margin-left: 250px;
+  display: flex;
+  gap: 15px;
 }
 
 .social-media a {
   padding: 10px;
-  color: black;
-  border: 1px solid;
+  color: #1f2937;
   background-color: white;
-  border-radius: 15px;
-  margin: 5px;
 }
 
 .social-media a:hover {
-  padding: 13px;
-  opacity: 0.9;
+  transform: scale(1.1);
 }
 
 .sobre-info {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   text-align: start;
 }
 
 #projetos {
   font-size: 25px;
   color: white;
-  height: 35vh;
+  padding-top: 200px;
+  padding-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -190,17 +178,22 @@ section#sobre {
 
 .card {
   background: white;
+  height: 600px;
   width: 270px;
   margin: 10px;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-card {
+  margin-bottom: 15px;
 }
 
 .card:hover {
-  background-color: #23232e;
-  color: white;
-  cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
+  transform: scale(1.01);
 }
 
 .card-image {
@@ -209,25 +202,61 @@ section#sobre {
   background-size: cover;
 }
 
+.content-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-card p {
+  font-size: 18px;
+}
+
 .img-2 {
-  background-image: url(../imgs/undraw_map_dark_re_36sy.svg);
+  background-image: url(../imgs/pkm.png);
 }
 .img-1 {
-  background-image: url(../imgs/undraw_season_change_f99v.svg);
+  background-image: url(../imgs/pjt-2.png);
+}
+.img-3 {
+  background-image: url(../imgs/carrinho.png);
+}
+.img-4 {
+  background-image: url(../imgs/pjt-2.png);
+}
+
+.sobre-resume {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.capacidades {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.button-card-3 {
+  margin-top: 80px !important;
 }
 
 .card a {
-  background-color: #09d;
+  background-color: #7064fc;
   color: white;
   padding: 15px 20px;
   display: block;
   text-align: center;
   margin: 20px 50px;
   border-radius: 15px;
-  border: 1px solid #09d;
+  border: 1px solid #6255f6;
+}
+
+.card a:hover {
+  opacity: 0.9;
 }
 
 #contato {
+  margin-top: 50px;
   background-color: 23232e;
   border-radius: 15px;
   display: flex;
@@ -252,10 +281,10 @@ section#sobre {
   display: block;
 }
 
-.icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.email {
+  margin-top: -30px;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 .icon {
@@ -312,7 +341,7 @@ section#sobre {
 .form button {
   display: block;
   padding: 1rem;
-  background: #0072c4;
+  background: #7064fc;
   color: #fff;
   font: inherit;
   text-transform: uppercase;
@@ -364,12 +393,17 @@ footer p {
     margin-bottom: 100px;
   }
 
+  #sobre {
+    display: flex;
+    flex-direction: column;
+  }
+
   .home-img {
     max-width: 500px;
   }
-  #img-sobre {
+  /* #img-sobre {
     max-width: 250px;
-  }
+  } */
 }
 
 @media (max-width: 450px) {

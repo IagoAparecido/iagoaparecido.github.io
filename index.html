@@ -1,149 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Iago</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>Iago</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <a class="logo" href="/">Iago</a>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-list">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <div class="home-info">
-        <h2>Olá, Mundo!</h2>
-        <span class="home-name">Iago Ferreira Aparecido</span>
-        <span class="home-resume">
-          Estudante de Análise e Desenvolvimento de Sistemas.
-        </span>
-      </div>
-      <div class="home-img">
-        <div class="home-img"><img id="pg1" src="imgs/undraw_programming_re_kg9v.svg" alt=""></div>
-
-      </div>
-    </section>
-    <div class='icon-container'>
-      <span class="icon">
-        <i class="fa-solid fa-angles-down"></i>
-      </span>
-    </div>
-
-    <section id="sobre">
-      <div class="sobre-img"><img id="img-sobre" src="imgs/20220626_184133.jpg" alt=""></div>
-      <div class="sobre-info">
-        <hr>
-        <h2>Olá, me chamo Iago</h2>
-        <span class="sobre-resume">
-          Cursando Análise e Desenvolvimento de Sistemas, 1° Semestre.<br>Em busca de cada vez mais conhecimento. <br>
-          Sempre focado e almejando grandes oportunidades.<br>
-          Atualmente morando em Sinop, MT.
-          <br><br>
-          Habituado com Javascript <i class="fa-brands fa-js"></i>, Node.JS <i class="fa-brands fa-node-js"></i>,
-          React.JS <i class="fa-brands fa-react"></i> e
-          atualmente estudando Typescript.
-        </span>
-        <hr>
-        <br>
-        <div class="social-media">
-          <a href="https://github.com/IagoAparecido" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.instagram.com/iago2p/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/iago-ferreira-aparecido-738bb0232/" target="_blank"><i
-              class="fa-brands fa-linkedin"></i></a>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">Iago</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-      </div>
-    </section>
+        <ul class="nav-list">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="conteiner">
-      <div id="projetos">
-        <h1>Projetos</h1>
-      </div>
-      <!-- <div class="card">
-        <div class="card-image img-2"></div>
-        <h2>Teste de API</h2>
-        <br>
-        <p>
-          Estudo de API. <br><br>
-          Uma simples API de consuta de CEP, ultilizando AJAX.
-          <br><br><br>
-        </p>
-        <a href="./paginas/api.html">Saiba Mais</a>
-      </div> -->
-      <div class="card">
-        <div class="card-image img-1"></div>
-        <h2>EM BREVE </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, ratione tempore quaerat sunt id
-          doloribus, hic delectus eveniet illo impedit. Quibusdam sed ipsa ullam non exercitationem. At, voluptas
-          assumenda!</p>
-        <a href="#">Saiba Mais</a>
-      </div>
-      <div class="card">
-        <div class="card-image img-1"></div>
-        <h2>EM BREVE</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, ratione tempore quaerat sunt id
-          doloribus, hic delectus eveniet illo impedit. Quibusdam sed ipsa ullam non exercitationem. At, voluptas
-          assumenda!</p>
-        <a href="#">Saiba Mais</a>
-      </div>
-      <div class="card">
-        <div class="card-image img-1"></div>
-        <h2>EM BREVE</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, ratione tempore quaerat sunt id
-          doloribus, hic delectus eveniet illo impedit. Quibusdam sed ipsa ullam non exercitationem. At, voluptas
-          assumenda!</p>
-        <a href="#">Saiba Mais</a>
-      </div>
-      <div class="card">
-        <div class="card-image img-1"></div>
-        <h2>EM BREVE</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis, ratione tempore quaerat sunt id
-          doloribus, hic delectus eveniet illo impedit. Quibusdam sed ipsa ullam non exercitationem. At, voluptas
-          assumenda!</p>
-        <a href="#">Saiba Mais</a>
-      </div>
-    </section>
+    <main>
+      <section id="home">
+        <div class="home-info">
+          <h2>Olá, Mundo!</h2>
+          <span class="home-name">Iago Ferreira Aparecido</span>
+          <span class="home-resume">
+            Estudante de Análise e Desenvolvimento de Sistemas.
+          </span>
+        </div>
+        <div class="home-img">
+          <div class="home-img">
+            <img id="pg1" src="imgs/undraw_programming_re_kg9v.svg" alt="" />
+          </div>
+        </div>
+      </section>
 
-    <div id="contato">
-      <h1>Contato</h1>
-      <form action="https://formsubmit.co/iagoferreiraaparecido9@gmail.com" method="POST" class="form">
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name" required />
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required />
-        <label for="message">Mensagem</label>
-        <textarea name="message" id="message" required></textarea>
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://iagoaparecido.github.io/paginas/obrigado.html" />
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </main>
+      <section id="sobre">
+        <div class="sobre-img">
+          <img id="img-sobre" src="imgs/20220626_184133.jpg" alt="" />
+        </div>
+        <div class="sobre-info">
+          <hr />
+          <h2>Olá, me chamo Iago</h2>
+          <div class="sobre-resume">
+            <p>Cursando Análise e Desenvolvimento de Sistemas, 4° Semestre.</p>
+            <p>
+              Em busca de cada vez mais conhecimento, sempre focado e almejando
+              grandes oportunidades.
+            </p>
+            <p>Atualmente morando em Sinop, MT.</p>
 
-  <footer>
-    <p>Posted by: Iago Ferreira Aparecido</p>
-  </footer>
+            <div class="capacidades">
+              <p>
+                Habituado com os frameworks React.js e React Native, e com o
+                software Node.js.
+              </p>
+              <p>
+                Conhecimento em construção de api`s RESTFUL, e estilização com
+                css e com a biblioteca Tailwind.
+              </p>
+              <p>Atualmente estudando Typescript e o framework Next.js.</p>
+              <p></p>
+            </div>
+          </div>
+          <hr />
 
-  <script src="/Js/index.js"></script>
-  <script src="https://kit.fontawesome.com/41b7b81a59.js" crossorigin="anonymous"></script>
-</body>
+          <div class="social-media">
+            <a href="https://github.com/IagoAparecido" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/iago2p/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/iago-ferreira-aparecido-738bb0232/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </section>
 
+      <section class="conteiner">
+        <div id="projetos">
+          <h1>Projetos</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-image img-1"></div>
+          <div class="content-card">
+            <h2 class="title-card">Aplicativo Pendências</h2>
+
+            <p>
+              Segundo projeto interdisciplinar do curso de Análise e
+              Desenvolvimento de Sistemas.
+              <br />
+              Um projeto expo que consiste em uma aplicação que tem como foco
+              auxiliar os acadêmicos a consultarem suas pendências com a
+              universidade.
+            </p>
+            <br />
+            <br />
+            <a
+              href="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile"
+              class="button-card"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image img-2"></div>
+          <div class="content-card">
+            <h2 class="title-card">Pokedex</h2>
+
+            <p>
+              Projeto desenvolvido com o objetivo de estudar typescript,
+              utilizando a PokeAPI.
+              <br />
+              Uma simples pokedex, são puxados os 300 primeiros pokemon e
+              distribuidos na página em cards. Todos os pokemon são separados
+              por uma paginação, com um filtro por nome e tipo. Além de um modal
+              com os atributos do pokemon selecionado.
+            </p>
+            <a
+              href="https://pokedex-typescript-kappa.vercel.app/"
+              class="button-card"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image img-3"></div>
+          <div class="content-card">
+            <h2 class="title-card">Carrinho de Compras</h2>
+
+            <p>
+              Projeto desenvolvido com o objetivo de estudar typescript.
+              <br />
+              Um simples projeto de um carrinho de compras, onde se pode
+              selecionar os itens e no fim finalizar o pedido. Existe seleção de
+              quantidade e remoção dos items do carrinho.
+            </p>
+
+            <a
+              href="https://shopping-cart-ruddy-omega.vercel.app/"
+              class="button-card button-card-3"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image img-1"></div>
+          <div class="content-card">
+            <h2 class="title-card">Aplicativo Pendências</h2>
+
+            <p>
+              Segundo projeto interdisciplinar do curso de Análise e
+              Desenvolvimento de Sistemas.
+              <br />
+              Um projeto expo que consiste em uma aplicação que tem como foco
+              auxiliar os acadêmicos a consultarem suas pendências com a
+              universidade.
+            </p>
+            <a
+              href="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile"
+              class="button-card"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image img-1"></div>
+          <div class="content-card">
+            <h2 class="title-card">Aplicativo Pendências</h2>
+
+            <p>
+              Segundo projeto interdisciplinar do curso de Análise e
+              Desenvolvimento de Sistemas.
+              <br />
+              Um projeto expo que consiste em uma aplicação que tem como foco
+              auxiliar os acadêmicos a consultarem suas pendências com a
+              universidade.
+            </p>
+            <a
+              href="https://github.com/KatianaHanisch/Projeto_Interdisciplinar_Mobile"
+              class="button-card"
+              target="_blank"
+              >Saiba Mais</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div id="contato">
+        <h1>Contato</h1>
+        <p class="email">iagoferreiraaparecido9@gmail.com</p>
+        <form
+          action="https://formsubmit.co/iagoferreiraaparecido9@gmail.com"
+          method="POST"
+          class="form"
+        >
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required />
+          <label for="message">Mensagem</label>
+          <textarea name="message" id="message" required></textarea>
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://iagoaparecido.github.io/paginas/obrigado.html"
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>Posted by: Iago Ferreira Aparecido</p>
+    </footer>
+
+    <script src="/Js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/41b7b81a59.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
