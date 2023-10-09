@@ -197,14 +197,16 @@ section#sobre {
 }
 
 .card-image {
-  height: 170px;
+  height: 250px;
   margin-bottom: 15px;
   background-size: cover;
 }
 
 .content-card {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .content-card p {
@@ -221,7 +223,10 @@ section#sobre {
   background-image: url(../imgs/carrinho.png);
 }
 .img-4 {
-  background-image: url(../imgs/pjt-2.png);
+  background-image: url(../imgs/pais.png);
+}
+.img-5 {
+  background-image: url(../imgs/roleta.png);
 }
 
 .sobre-resume {
@@ -234,10 +239,6 @@ section#sobre {
   flex-direction: column;
   gap: 5px;
   margin-top: 15px;
-}
-
-.button-card-3 {
-  margin-top: 80px !important;
 }
 
 .card a {
