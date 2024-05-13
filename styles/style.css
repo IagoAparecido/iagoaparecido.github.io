@@ -170,7 +170,7 @@ section#sobre {
   position: static;
 }
 
-.conteiner {
+.container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -227,6 +227,12 @@ section#sobre {
 }
 .img-5 {
   background-image: url(../imgs/roleta.png);
+}
+.img-6 {
+  background-image: url(../imgs/eventos.png);
+}
+.img-7 {
+  background-image: url(../imgs/biblioteca.png);
 }
 
 .sobre-resume {
